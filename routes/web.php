@@ -51,3 +51,6 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'active', 'admin'])-
     Route::post('products/import', [AdminProductController::class, 'import'])->name('products.import');
     Route::resource('products', AdminProductController::class)->except('show');
 });
+
+
+// 
